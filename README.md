@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Asistente de Medicamentos
 
-## Getting Started
+## Descripción
+Asistente médico desarrollado utilizando Next.js para el frontend y la API de Gemini para el procesamiento del lenguaje natural. Este proyecto implementa un enfoque de fine-tuning (pre-entrenamiento) con información detallada de medicamentos para proporcionar información precisa y relevante sobre medicamentos y condiciones médicas.
 
-First, run the development server:
+## Características principales
+- Proporciona información general sobre medicamentos y condiciones médicas
+- Responde en español e inglés según la preferencia del usuario
+- Incluye advertencias para consultar a profesionales de la salud
+- Provee información sobre dosis solo para medicamentos de venta libre
+- Menciona posibles efectos secundarios y contraindicaciones
+- Identifica situaciones de emergencia y recomienda atención inmediata
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologías utilizadas
+- Frontend: Next.js
+- Procesamiento de lenguaje natural: API de Gemini (gemini-1.5-flash)
+- Fine-tuning personalizado con datos de medicamentos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Capturas de pantalla
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Página de Login
+<img width="1097" alt="image" src="https://github.com/user-attachments/assets/05430ab9-0bb3-4e36-b57d-3fca209ca982" />
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+### Página de Registro
+<img width="1097" alt="image" src="https://github.com/user-attachments/assets/9e29d9be-8300-4b89-b2f3-e26b5c66e65e" />
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Interfaz principal del Asistente
+![image](https://github.com/user-attachments/assets/c3ebba14-8e96-4dbb-8664-61a8603c44d8)
+![image](https://github.com/user-attachments/assets/90fe1130-2062-4246-83d6-e198906f825d)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Instalación y configuración
+1. Clonar el repositorio
+2. Instalar dependencias: `pnpm install`
+3. Configurar variables de entorno: Crear archivo `.env.local` con `GEMINI_API_KEY=tu_clave_api`
+4. Iniciar el servidor de desarrollo: `pnpm run dev`
